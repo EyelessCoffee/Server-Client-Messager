@@ -8,7 +8,6 @@ client.SendMessageToServer();
 class Client
 {
     TcpClient client;
-
     public Client() => ConnectToServer();
 
     void ConnectToServer()
@@ -33,17 +32,7 @@ class Client
         stream.Write(data, 0, data.Length);
 
         Console.WriteLine("Message sent!");
-        Console.WriteLine("Would you like to send another message? y or n");
-
-        string response = Console.ReadLine() ?? string.Empty;
-
-        if(response != "y")
-        {
-            Console.WriteLine("Bye now!");
-            return;
-        }
-
-        SendMessageToServer();
+        Console.WriteLine("Client Closed");
     }
 }
 

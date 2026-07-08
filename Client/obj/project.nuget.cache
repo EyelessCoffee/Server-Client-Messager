@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7UgFUAruUdk=",
+  "dgSpecHash": "eMBxInmlTew=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mrlev\\OneDrive\\Documents\\.Net\\NetworkStuff\\Client\\Client.csproj",
+  "projectFilePath": "C:\\Users\\mrlev\\OneDrive\\Documents\\.Net\\NetworkStuff\\Server-Client-Messager\\Client\\Client.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

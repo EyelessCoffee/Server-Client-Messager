@@ -33,18 +33,10 @@ class Server
         // decode the message
         string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
         Console.WriteLine($"Received: {message}");
-        File.AppendAllText("Message.txt", $"{DateTime.Now} : {message}");
-
-        Console.WriteLine("Close Server? y or n");
-        string response = Console.ReadLine() ?? string.Empty;
-
-        if(response != "y")
-        {
-            Console.WriteLine("Bye now!");
-            return;
-        }
-
-        ListenForMessage();
+        File.AppendAllText("Message.txt", $"{DateTime.Now} : {message}{Environment.NewLine}");
+        
+        Console.WriteLine("Server Closed");
+        return;
     }
 }
 
